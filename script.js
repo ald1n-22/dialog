@@ -14,17 +14,35 @@ const content = document.querySelector('.help__content')
 
 
 
-const tl = gsap.timeline({
-    scrollTrigger: {
-        trigger: parent,
-        start: 'top top',
-        end: 'bottom bottom',
-        scrub: true,
-    }
-})
-tl.to(content, {
-    xPercent: -120
-})
+if (window.innerWidth > 1280) {
+    const tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: parent,
+            start: 'top top',
+            end: 'bottom bottom',
+            scrub: true,
+        }
+    })
+    tl.to(content, {
+        xPercent: -120
+    })
+} else {
+    var swiper = new Swiper('.help-mob__swiper', {
+        slidesPerView: 'auto',
+        spaceBetween: 30,
+        centeredSlides: true,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+}
+
 
 
 
@@ -54,6 +72,10 @@ var swiper = new Swiper('.feedback-slider', {
     spaceBetween: 30,
     centeredSlides: true,
     loop: true,
+    pagination: {
+        el: '.feedback-pagination',
+        clickable: true,
+    },
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
