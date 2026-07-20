@@ -37,6 +37,9 @@ body {
     max-width: 184.5rem;
     margin: 0 auto;
     padding: 0 30px;
+    @media (max-width: 576px) {
+        padding: 0 15px;
+    }
 }
 
 a {
