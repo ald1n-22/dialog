@@ -1320,6 +1320,9 @@ main {
                 font-size: 20px;
                 padding: 3px 9px;
                 border-radius: 15px;
+                @media (max-width: 768px) {
+                    font-size: 14px;
+                }
             }
         }
     }
@@ -1635,6 +1638,7 @@ main {
     overflow: hidden;
     @media (max-width: 1280px) {
         padding-bottom: 50px;
+        margin-top: 60px;
     }
     &__title {
         font-size: 5.6rem;
@@ -1653,7 +1657,7 @@ main {
             padding: 0 50px;
         }
         @media (max-width: 576px) {
-            max-width: 260px;
+            max-width: 290px;
             padding: 0;
         }
     }
@@ -1729,6 +1733,7 @@ main {
         border-bottom-left-radius: 50px;
         border-bottom-right-radius: 50px;
         background: var(--palette-5);
+        padding: 2rem 1.5rem 8.7rem 1.5rem;
     }
     &__title {
         font-size: 6rem;

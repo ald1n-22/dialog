@@ -1403,6 +1403,11 @@ main {
   padding: 3px 9px;
   border-radius: 15px;
 }
+@media (max-width: 768px) {
+  .study-mob__content-list span {
+    font-size: 14px;
+  }
+}
 .study-mob__card {
   background: var(--palette-1);
   padding: 23px 19px 17px;
@@ -1771,6 +1776,7 @@ main {
 @media (max-width: 1280px) {
   .feedback {
     padding-bottom: 50px;
+    margin-top: 60px;
   }
 }
 .feedback__title {
@@ -1794,7 +1800,7 @@ main {
 }
 @media (max-width: 576px) {
   .feedback__wrap {
-    max-width: 260px;
+    max-width: 290px;
     padding: 0;
   }
 }
@@ -1884,6 +1890,7 @@ main {
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
     background: var(--palette-5);
+    padding: 2rem 1.5rem 8.7rem 1.5rem;
   }
 }
 .faq__title {
