@@ -1646,7 +1646,7 @@ main {
             padding: 0 50px;
         }
         @media (max-width: 576px) {
-            max-width: 250px;
+            max-width: 260px;
             padding: 0;
         }
     }
@@ -1656,6 +1656,10 @@ main {
         overflow: visible;
         &-wrapper {
             padding: 6rem 0;
+            height: 100%;
+            @media (max-width: 1280px) {
+                padding: 50px 0;
+            }
         }
         &-pagination {
             display: none;
@@ -1669,6 +1673,10 @@ main {
             border-radius: 3.5rem;
             box-shadow: 0 0 1.43rem 0.6rem rgba(0, 0, 0, 0.15);
             width: 70rem;
+
+            display: flex;
+            flex-direction: column;
+            min-height: 35rem;
             @media (max-width: 1280px) {
                 width: 100%;
             }
@@ -1764,6 +1772,10 @@ main {
         font-weight: 500;
         color: var(--palette-2);
         text-align: left;
+        @media (max-width: 768px) {
+            font-size: 16px;
+            padding: 22px 30px;
+        }
     }
 
     &__icon {
@@ -1796,11 +1808,13 @@ main {
         transition: all 0.35s ease;
 
         p {
-            max-width: 90%;
             font-size: 2rem;
             line-height: 1.8;
             color: var(--palette-2);
             padding: 0 3.5rem 2.5rem 3.5rem;
+            @media (max-width: 768px) {
+                font-size: 16px;
+            }
         }
     }
 }
