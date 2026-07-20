@@ -641,11 +641,15 @@ main {
     width: 100%;
     padding: 0 1.5rem 8.8rem;
     position: relative;
-    @media (max-width: 1280px) {
-        &__practice {
+    &__practice {
+        @media (max-width: 1280px) {
             padding: 65px 30px 65px;
         }
+        @media (max-width: 768px) {
+            padding: 65px 0px 65px;
+        }
     }
+
     &__line {
         position: absolute;
         z-index: -1;
@@ -749,8 +753,11 @@ main {
         &-wrap {
             overflow: hidden;
             p {
-                font-size: 1.8rem;
+                font-size: 2rem;
                 color: var(--palette-2);
+                @media (max-width: 576px) {
+                    font-size: 16px;
+                }
             }
         }
         span {

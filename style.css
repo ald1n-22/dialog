@@ -702,6 +702,11 @@ main {
     padding: 65px 30px 65px;
   }
 }
+@media (max-width: 768px) {
+  .step__practice {
+    padding: 65px 0px 65px;
+  }
+}
 .step__line {
   position: absolute;
   z-index: -1;
@@ -813,8 +818,13 @@ main {
   overflow: hidden;
 }
 .step__row-wrap p {
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: var(--palette-2);
+}
+@media (max-width: 576px) {
+  .step__row-wrap p {
+    font-size: 16px;
+  }
 }
 .step__row span {
   display: inline-block;
