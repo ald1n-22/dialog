@@ -28,7 +28,7 @@ if (window.innerWidth > 1280) {
         }
     })
     tl.to(content, {
-        xPercent: -130
+        xPercent: -125
     })
 } else {
     var swiper = new Swiper('.help-mob__swiper', {
