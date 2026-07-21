@@ -729,7 +729,7 @@ main {
         grid-template-columns: 1fr max-content;
         grid-template-rows: max-content 0fr;
         width: 47.4rem;
-        padding: 1.1rem 0;
+        padding: 1.1rem 0.5rem 1.1rem 0;
         transition: 0.3s ease;
         &:not(:last-of-type) {
             border-bottom: 2px solid var(--palette-2);
@@ -1590,9 +1590,6 @@ main {
         overflow: hidden;
         @media (hover: hover) {
             &:hover {
-                h3 {
-                    transform: translateX(-50%) translateY(0%);
-                }
                 p {
                     transform: translateX(-50%) translateY(0%);
                 }
@@ -1625,9 +1622,6 @@ main {
             font-weight: 700;
             color: var(--palette-2);
             transition: 0.3s ease;
-            @media (hover: hover) {
-                transform: translateX(-50%) translateY(180%);
-            }
         }
         p {
             color: var(--palette-2);
