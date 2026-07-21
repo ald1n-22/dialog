@@ -373,7 +373,7 @@ main {
   .hero {
     min-height: 634px;
     padding-bottom: 30px;
-    background: url("./img/hero-bg-mob.jpg") top/cover;
+    background: url("./img/hero-bg-mob.webp") top/cover;
   }
 }
 .hero::before {
@@ -1155,7 +1155,7 @@ main {
   width: max-content;
 }
 .study__col:nth-of-type(2) {
-  background: url("./img/study-img1.jpg") no-repeat center/cover;
+  background: url("./img/study-img1.webp") no-repeat center/cover;
   padding: 5.4rem 9rem 5rem 6.7rem;
   border-radius: 5rem;
   position: relative;
