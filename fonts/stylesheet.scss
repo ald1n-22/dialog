@@ -1,32 +1,40 @@
 @font-face {
-    font-family: 'PT Root UI';
-    src: local('PT Root UI Medium'), local('PTRootUI-Medium'),
-        url('PTRootUI-Medium.woff2') format('woff2');
+    font-family: "PT Root UI";
+    src:
+        local("PT Root UI Medium"),
+        local("PTRootUI-Medium"),
+        url("PTRootUI-Medium.woff2") format("woff2");
     font-weight: 500;
     font-style: normal;
+    font-display: swap;
 }
-
 @font-face {
-    font-family: 'PT Root UI';
-    src: local('PT Root UI Light'), local('PTRootUI-Light'),
-        url('PTRootUI-Light.woff2') format('woff2');
+    font-family: "PT Root UI";
+    src:
+        local("PT Root UI Light"),
+        local("PTRootUI-Light"),
+        url("PTRootUI-Light.woff2") format("woff2");
     font-weight: 300;
     font-style: normal;
+    font-display: swap;
 }
-
 @font-face {
-    font-family: 'PT Root UI';
-    src: local('PT Root UI'), local('PTRootUI-Regular'),
-        url('PTRootUI-Regular.woff2') format('woff2');
+    font-family: "PT Root UI";
+    src:
+        local("PT Root UI"),
+        local("PTRootUI-Regular"),
+        url("PTRootUI-Regular.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
-
 @font-face {
-    font-family: 'PT Root UI';
-    src: local('PT Root UI Bold'), local('PTRootUI-Bold'),
-        url('PTRootUI-Bold.woff2') format('woff2');
+    font-family: "PT Root UI";
+    src:
+        local("PT Root UI Bold"),
+        local("PTRootUI-Bold"),
+        url("PTRootUI-Bold.woff2") format("woff2");
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
 }
-

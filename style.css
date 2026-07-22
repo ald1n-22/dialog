@@ -358,9 +358,24 @@ main {
 
 .hero {
   height: 88.8rem;
-  background: url("./img/hero-bg.svg") bottom/cover;
   position: relative;
   overflow: hidden;
+}
+.hero-bg, .hero-bg-mob {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+.hero-bg img, .hero-bg-mob img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+.hero-bg-mob {
+  display: none;
 }
 @media (max-width: 1280px) {
   .hero {
@@ -373,7 +388,12 @@ main {
   .hero {
     min-height: 634px;
     padding-bottom: 30px;
-    background: url("./img/hero-bg-mob.webp") top/cover;
+  }
+  .hero-bg {
+    display: none;
+  }
+  .hero-bg-mob {
+    display: block;
   }
 }
 .hero::before {
