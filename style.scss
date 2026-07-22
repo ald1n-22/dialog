@@ -1262,7 +1262,7 @@ main {
     }
     &__content {
         position: relative;
-        background: url("./img/study-img1.jpg") no-repeat center / cover;
+        background: url("./img/study-img1.webp") no-repeat center / cover;
         padding: 16px 23px;
         border-radius: 30px;
         width: 100%;
@@ -1588,6 +1588,7 @@ main {
         position: relative;
         cursor: pointer;
         overflow: hidden;
+        border-radius: 3rem;
         @media (hover: hover) {
             &:hover {
                 p {
